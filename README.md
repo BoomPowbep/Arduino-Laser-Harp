@@ -1,4 +1,4 @@
-# Arduino Laser Harp
+# Arduino Laser Harp [WORK IN PROGRESS]
 
 A very simple Laser Harp running with an Arduino UNO.
 
