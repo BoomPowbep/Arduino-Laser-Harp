@@ -2,13 +2,9 @@
 
 A very simple Laser Harp running with an Arduino UNO.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ## Deployment
 
-'''
+```
 #include "LH_String.h" // "Laser Harp String" class
 
 SoftwareSerial myMonitor(0, 1); // For debug purpose
@@ -34,7 +30,7 @@ void loop() {
   
   delay(10);
 }
-'''
+```
 
 ## Built With
 
@@ -46,4 +42,4 @@ void loop() {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
