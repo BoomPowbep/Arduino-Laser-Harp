@@ -20,7 +20,7 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 
-#define DEFAULT_RX      5     // Default RX pin. Automatically configured
+#define DEFAULT_RX      0     // Default RX pin. Not used.
 #define MIDI_BAUDRATE   31250 // Midi baudrate
 
 class LH_Midi {

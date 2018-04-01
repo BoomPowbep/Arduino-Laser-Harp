@@ -17,7 +17,7 @@
 
 #include "LH_String.h"
 
-LH_String::LH_String(const byte analogInput, const byte channel, const byte note, const int treshold) : m_midi(6), m_analogPin(analogInput), m_channel(channel), m_note(note), m_treshold(treshold), m_isActive(false) {
+LH_String::LH_String(const byte analogInput, const byte midiPinOut, const byte note, const int treshold) : m_midi(midiPinOut), m_analogPin(analogInput), m_note(note), m_treshold(treshold), m_isActive(false), m_lastAnalogVal(0) {
 
   // Make sure the note is off
   m_midi.noteOff(m_note);

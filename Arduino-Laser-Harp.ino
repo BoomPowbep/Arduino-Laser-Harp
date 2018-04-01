@@ -2,8 +2,8 @@
 
 SoftwareSerial myMonitor(0, 1); // For debug purpose
 
-LH_String myA = LH_String(A0, 1, 69, 1011); // Wired on input A0, uses MIDI channel 1, note 69 (A4), analog treshold: 1011
-LH_String myC = LH_String(A2, 1, 41, 999);
+LH_String myA4 = LH_String(A0, 6, 69, 1016); // Analog input A0, MIDI output 6, note 69 (A4), analog treshold: 1016
+LH_String myA3 = LH_String(A2, 6, 57, 1010);
 
 void setup() {
 
@@ -12,14 +12,14 @@ void setup() {
 
 void loop() {
 
-  myA.checkStringPlayed(); // Detects if this string is played and so plays an A
+  myA4.checkStringPlayed(); // Detects if this string is played and so plays an A4
   
-  //myMonitor.println(myA.getLastAnalogVal()); // Prints sensor analog value, so I can easily configure analog treshold
+  //myMonitor.println(myA4.getLastAnalogVal()); // Prints sensor analog value, so I can easily configure analog treshold
   
-  myC.checkStringPlayed();
+  myA3.checkStringPlayed();
   
-  //myMonitor.println(myC.getLastAnalogVal());
+  //myMonitor.println(myA3.getLastAnalogVal());
   
-  delay(10);
+  delay(5);
 }
 
