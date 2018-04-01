@@ -13,7 +13,7 @@ A very simple Laser Harp running with an Arduino UNO.
 
 ## Deployment
 
-The [Fritzing] (http://fritzing.org/home/) file contains a simple sketch of the wiring.
+The [Fritzing](http://fritzing.org/home/) file contains a simple sketch of the wiring.
 
 ```
 #include "LH_String.h" // "Laser Harp String" class
