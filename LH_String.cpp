@@ -1,3 +1,20 @@
+/***********************************************
+*             ___     _       _
+*            / __|  _| |_   _| |_
+*           | (__  |_   _| |_   _|
+*            \___|   |_|     |_|
+*
+*             Arduino Laser Harp
+*
+*                LH_String.cpp
+*               Mickaël Debalme
+*              01/04/2018 (V1.1)
+*             Laser harp's string
+*
+*              Copyright (C) 2018
+*
+**********************************************/
+
 #include "LH_String.h"
 
 LH_String::LH_String(const byte analogInput, const byte channel, const byte note, const int treshold) : m_midi(6), m_analogPin(analogInput), m_channel(channel), m_note(note), m_treshold(treshold), m_isActive(false) {
@@ -13,7 +30,7 @@ void LH_String::checkStringPlayed() {
     // Reading analog input value
     int LDR_val = m_lastAnalogVal = analogRead(m_analogPin);
 
-    // If the note is off and the string is 'cut'
+    // If the note is off and the string is played
     if(LDR_val < m_treshold && m_isActive == false) {
        
       // Play note
@@ -21,7 +38,7 @@ void LH_String::checkStringPlayed() {
       m_isActive = true;
     }
 
-    // If the note is on as the string is 'free'
+    // If the note is on as the string is not played anymore
     else if(LDR_val >= m_treshold && m_isActive == true) {
 
       // Stop playing note

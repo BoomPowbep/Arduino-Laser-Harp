@@ -1,3 +1,20 @@
+/***********************************************
+*             ___     _       _
+*            / __|  _| |_   _| |_
+*           | (__  |_   _| |_   _|
+*            \___|   |_|     |_|
+*
+*             Arduino Laser Harp
+*
+*                LH_Midi.cpp
+*               Mickaël Debalme
+*              01/04/2018 (V1.1)
+*           Laser harp's MIDI link
+*
+*              Copyright (C) 2018
+*
+**********************************************/
+
 #include "LH_Midi.h"
 
 LH_Midi::LH_Midi(byte serialTx) : m_serial(DEFAULT_RX, serialTx) {
