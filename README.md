@@ -1,8 +1,19 @@
-# Arduino Laser Harp [WORK IN PROGRESS]
+# Arduino Laser Harp - v 1.0 [WORK IN PROGRESS]
 
 A very simple Laser Harp running with an Arduino UNO.
 
+### Prerequisites
+
+- [x] Synthesizer with MIDI input
+- [x] Arduino
+- [x] LDRs
+- [x] Laser diodes (5V)
+- [x] 2 x 220 ohm and as much 10kohm as LDRs
+- [x] MIDI female jack
+
 ## Deployment
+
+The [Fritzing] (http://fritzing.org/home/) file contains a simple sketch of the wiring.
 
 ```
 #include "LH_String.h" // "Laser Harp String" class
