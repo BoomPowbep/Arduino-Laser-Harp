@@ -1,3 +1,26 @@
+/***********************************************
+*             ___     _       _
+*            / __|  _| |_   _| |_
+*           | (__  |_   _| |_   _|
+*            \___|   |_|     |_|
+*
+*             Arduino Laser Harp
+*
+*           Arduino-Laser-Harp.ino
+*               Mickaël Debalme
+*              02/04/2018 (V1.0)
+*                 Laser Harp.
+*
+*              Copyright (C) 2018
+*
+**********************************************/
+
+/*************************************************
+ * RESSOURCES *
+ * ********** *
+ * Notes numbers: https://newt.phys.unsw.edu.au/jw/notes.html
+ */
+
 #include "LH_String.h" // "Laser Harp String" class
 
 SoftwareSerial myMonitor(0, 1); // For debug purpose

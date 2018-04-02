@@ -8,7 +8,7 @@
 *
 *                LH_String.cpp
 *               Mickaël Debalme
-*              01/04/2018 (V1.1)
+*              01/04/2018 (V1.0)
 *             Laser harp's string
 *
 *              Copyright (C) 2018
