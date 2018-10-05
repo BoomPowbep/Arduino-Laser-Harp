@@ -31,7 +31,7 @@ void LH_String::checkStringPlayed() {
     int LDR_val = m_lastAnalogVal = analogRead(m_analogPin);
 
     // If the note is off and the string is played
-    if(LDR_val < m_treshold && m_isActive == false) {
+    if(m_isActive == false && LDR_val < m_treshold) {
        
       // Play note
       m_midi.noteOn(m_note);
@@ -39,7 +39,7 @@ void LH_String::checkStringPlayed() {
     }
 
     // If the note is on as the string is not played anymore
-    else if(LDR_val >= m_treshold && m_isActive == true) {
+    else if(m_isActive == true && LDR_val >= m_treshold) {
 
       // Stop playing note
       m_midi.noteOff(m_note);
@@ -51,4 +51,3 @@ int LH_String::getLastAnalogVal() const {
 
   return m_lastAnalogVal;
 }
-
